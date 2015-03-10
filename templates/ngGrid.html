@@ -1,34 +1,24 @@
-<!-- <table ng-repeat="d in data" border=0>
-    <tr>
-        <td class="datacelltext"><label ng-if="d[0]">{{d[0].name.friendly()}}</label></td>
-        <td class="datacelltext"><label ng-if="d[1]">{{d[1].name.friendly()}}</label></td>
-        <td class="datacelltext"><label ng-if="d[2]">{{d[2].name.friendly()}}</label></td>
-        <td class="datacelltext"><label ng-if="d[3]">{{d[3].name.friendly()}}</label></td>
-        <td class="datacelltext"><label ng-if="d[4]">{{d[4].name.friendly()}}</label></td>
-    </tr>
-    <tr>
-        <td class="datacellimg"><img ng-if="d[0]" ng-src="{{d[0].images[0].url || missingImage}}" width=65 height=65/></td>
-        <td class="datacellimg"><img ng-if="d[1]" ng-src="{{d[1].images[0].url || missingImage}}" width=65 height=65/></td>
-        <td class="datacellimg"><img ng-if="d[2]" ng-src="{{d[2].images[0].url || missingImage}}" width=65 height=65/></td>
-        <td class="datacellimg"><img ng-if="d[3]" ng-src="{{d[3].images[0].url || missingImage}}" width=65 height=65/></td>
-        <td class="datacellimg"><img ng-if="d[4]" ng-src="{{d[4].images[0].url || missingImage}}" width=65 height=65/></td>
-    </tr> 
-</table> -->
-
 <div  ng-repeat="d in data" class="container-fluid">
-<div class="row">
-    
-  <!--       <div class="col-md-2"><label ng-if="d[0]">{{d[0].name.friendly()}}</label></div>
-        <div class="col-md-2"><label ng-if="d[1]">{{d[1].name.friendly()}}</label></div>
-        <div class="col-md-2"><label ng-if="d[2]">{{d[2].name.friendly()}}</label></div>
-        <div class="col-md-2"><label ng-if="d[3]">{{d[3].name.friendly()}}</label></div>
-        <div class="col-md-2"><label ng-if="d[4]">{{d[4].name.friendly()}}</label></div>
-   -->
-        <div class="col-sm-1"><img class="img-responsive" ng-if="d[0]" ng-src="{{d[0].images[0].url || missingImage}}" width=65 height=65/></div>
-        <div class="col-sm-1"><img class="img-responsive" ng-if="d[1]" ng-src="{{d[1].images[0].url || missingImage}}" width=65 height=65/></div>
-        <div class="col-sm-1"><img class="img-responsive" ng-if="d[2]" ng-src="{{d[2].images[0].url || missingImage}}" width=65 height=65/></div>
-        <div class="col-sm-1"><img class="img-responsive" ng-if="d[3]" ng-src="{{d[3].images[0].url || missingImage}}" width=65 height=65/></div>
-        <div class="col-sm-1"><img class="img-responsive" ng-if="d[4]" ng-src="{{d[4].images[0].url || missingImage}}" width=65 height=65/></div>
- 
-</div>
+    <div class="row">
+            <div class="col-sm-1">
+                <label ng-if="d[0]">{{d[0].name.friendly()}}</label>
+                <img class="img-responsive" ng-if="d[0]" ng-src="{{d[0].images[0].url || missingImage}}" width=65 height=65/>
+            </div>
+            <div class="col-sm-1">
+                <label ng-if="d[1]">{{d[1].name.friendly()}}</label>
+                <img class="img-responsive" ng-if="d[1]" ng-src="{{d[1].images[0].url || missingImage}}" width=65 height=65/>
+            </div>
+            <div class="col-sm-1">
+                <label ng-if="d[2]">{{d[2].name.friendly()}}</label>
+                <img class="img-responsive" ng-if="d[2]" ng-src="{{d[2].images[0].url || missingImage}}" width=65 height=65/>
+            </div>
+            <div class="col-sm-1">
+                <label ng-if="d[3]">{{d[3].name.friendly()}}</label>
+                <img class="img-responsive" ng-if="d[3]" ng-src="{{d[3].images[0].url || missingImage}}" width=65 height=65/>
+            </div>
+            <div class="col-sm-1">
+                <label ng-if="d[4]">{{d[4].name.friendly()}}</label>
+                <img class="img-responsive" ng-if="d[4]" ng-src="{{d[4].images[0].url || missingImage}}" width=65 height=65/>
+            </div>
+    </div>
 </div>
